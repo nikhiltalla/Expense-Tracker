@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import HomeScreen from './screens/HomeScreen'; // Ensure this path is correct
-import AddExpenseScreen from './screens/AddExpenseScreen'; // Ensure this path is correct
-import SignupScreen from './screens/SignupScreen'; // Ensure this path is correct
-import LoginScreen from './screens/LoginScreen'; // Ensure this path is correct
-import WelcomeScreen from './screens/WelcomeScreen'; // Ensure this path is correct
-import ForgotPasswordScreen from './screens/ForgotPasswordScreen'; // Make sure the path is correct
+import HomeScreen from './screens/HomeScreen'; 
+import AddExpenseScreen from './screens/AddExpenseScreen'; 
+import SignupScreen from './screens/SignupScreen'; 
+import LoginScreen from './screens/LoginScreen'; 
+import WelcomeScreen from './screens/WelcomeScreen'; 
+import ForgotPasswordScreen from './screens/ForgotPasswordScreen'; 
 
 const Stack = createNativeStackNavigator();
 
@@ -66,8 +66,8 @@ export default function App() {
       currentUser={currentUser}
       setCurrentUser={setCurrentUser}
       expenses={expenses[currentUser?.username] || []}
-      setExpenses={setExpenses} // Add this line to pass setExpenses
-      deleteExpenseForUser={handleDeleteExpenseForUser} // Pass this function if needed for deletion
+      setExpenses={setExpenses} 
+      deleteExpenseForUser={handleDeleteExpenseForUser} 
     />
   )}
 </Stack.Screen>
