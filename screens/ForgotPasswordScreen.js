@@ -9,7 +9,6 @@ export default function ForgotPasswordScreen({ users }) {
     const user = users.find(u => u.email === email);
     if (user) {
       alert('An email has been sent with instructions to reset your password.');
-      // Implement the email sending functionality here
     } else {
       alert('This email is not registered.');
     }
