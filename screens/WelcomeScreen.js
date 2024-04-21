@@ -1,12 +1,11 @@
 import React from 'react';
 import { View, Text, TouchableOpacity, Image, StyleSheet } from 'react-native';
-import { commonStyles } from '../styles'; // Make sure to adjust the path as necessary
-
+import { commonStyles } from '../styles'; 
 export default function WelcomeScreen({ navigation }) {
   return (
     <View style={commonStyles.container}>
       <Image
-        source={require('../logo.png')} // Replace with actual path to your local image
+        source={require('../logo.png')} 
         style={styles.logo}
       />
       <Text style={[commonStyles.header, styles.welcomeText]}>Welcome to Expense Tracker!</Text>
