@@ -46,23 +46,20 @@ export default function LoginScreen({ navigation, users, setCurrentUser }) {
 const styles = StyleSheet.create({
   buttonContainer: {
     flexDirection: 'row',
-    justifyContent: 'space-between', // Or 'flex-end' if you want them to be aligned to the right
+    justifyContent: 'space-between', 
     padding: 10,
   },
   button: {
-    // Style for your button
     paddingVertical: 10,
     paddingHorizontal: 20,
-    backgroundColor: 'blue', // Replace with your desired color
+    backgroundColor: 'blue', 
     borderRadius: 5,
     margin: 5,
   },
   buttonText: {
-    // Style for your button text
     color: 'white',
     textAlign: 'center',
   },
-  // ... other styles ...
 });
 
 
